@@ -1,0 +1,73 @@
+@import "src/styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 80%;
+  margin: 4rem auto;
+  color: black;
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 1.2rem;
+  }
+
+  &__search {
+    width: 540px;
+    height: 40px;
+  }
+
+  &__searchbar {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  &__query {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #F5F5F5;
+    gap: 0.3rem;
+    position: absolute;
+    right: 0px;
+
+    width: 210px;
+    height: 44px;
+    border-radius: 55px;
+    cursor: pointer;
+  }
+
+  &__line {
+    border: 1px solid #DFDFDF;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  &__wrap {
+    margin: 57px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 57px;
+    justify-items: center;
+  }
+}

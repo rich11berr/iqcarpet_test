@@ -1,0 +1,27 @@
+@import "src/styles/variables.scss";
+
+.input_wrap {
+    border: 2px solid $blue;
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 85%;
+    border: none;
+    padding: 0 20px;
+    height: 95%;
+    outline: none;
+}
+
+.input_icon_wrap {
+    width: 15%;
+    background-color: $blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

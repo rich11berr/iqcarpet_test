@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './styles/App.scss';
+import Header from "./components/UI/header/Header";
+import Input from "./components/logic/Input/Input"
+import Item from "./components/logic/item/Item";
+//images
+import Arrrow from "./assets/other/arrow.svg"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main className="main">
+            <span className="main__title">Продавцы</span>
+            <span className="main__subtitle">620 продавцов</span>
+            <br />
+            <div className="main__searchbar">
+              <Input placeholder="Что вы ищите?" className="main__search"/>
+              <button className="main__query">
+                  По обновлению
+                  <img src={Arrrow} alt="query"/>
+              </button>
+            </div>
+            <div className="main__line"></div>
+            <div className="main__wrap">
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+            </div>
+        </main>
     </div>
   );
 }
