@@ -77,6 +77,9 @@
 
 @media screen and (max-width: 516px) {
     .item {
+        width: 100%;
+
+        
         &_mainImage {
             left: 13px;
             top: -15px;
