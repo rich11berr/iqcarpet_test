@@ -70,12 +70,12 @@
 
         &:hover {
             background-color: $blue;
-            color: black;
+            color: #fff;
         }
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 516px) {
     .item {
         &_mainImage {
             left: 13px;
