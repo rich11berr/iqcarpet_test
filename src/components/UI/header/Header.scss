@@ -36,3 +36,9 @@
     background-color: $blue;
     border-radius: 2px;
 }
+
+@media screen and (max-width: 516px) {
+    .header {
+        display: none;
+    }
+}

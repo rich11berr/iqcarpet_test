@@ -13,7 +13,7 @@ const Item = () => {
         <p className="item_title">НАЗВАНИЕ ПРОДАВЦА</p>
         <div className="item_wrapper">
             <div className="item_image_wrap">
-                <img src={Caretka} alt="carpet" />
+                <img src={Caretka} alt="carpet" width="97px" height="auto"/>
                 <img src={Caretka} alt="carpet" />
                 <img src={Caretka} alt="carpet" />
             </div>

@@ -32,7 +32,9 @@
     &_image_wrap {
         margin-top: 20px;
         display: inline-flex;
+        width: 100%;
         gap: 9px;
+        justify-content: center;
     }
 
     &_info_wrap {
@@ -79,7 +81,7 @@
     .item {
         width: 100%;
 
-        
+
         &_mainImage {
             left: 13px;
             top: -15px;
@@ -95,6 +97,7 @@
 
         &_wrapper {
             margin-top: 103px;
+            width: 100%;
         }
 
     }
