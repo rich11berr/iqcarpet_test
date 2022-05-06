@@ -11,8 +11,10 @@ function App() {
     <div className="App">
       <Header />
       <main className="main">
-            <span className="main__title">Продавцы</span>
-            <span className="main__subtitle">620 продавцов</span>
+            <div className="main__title_wrap">
+              <span className="main__title">Продавцы</span>
+              <span className="main__subtitle">620 продавцов</span>
+            </div>
             <br />
             <div className="main__searchbar">
               <Input placeholder="Что вы ищите?" className="main__search"/>

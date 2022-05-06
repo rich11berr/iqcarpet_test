@@ -6,6 +6,7 @@
     height: 376px;
     background-color: $gray;
     border-top: 1px solid transparent;
+    box-sizing: border-box;
 
     &_mainImage {
         position: absolute;
@@ -71,5 +72,27 @@
             background-color: $blue;
             color: black;
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .item {
+        &_mainImage {
+            left: 13px;
+            top: -15px;
+            transform: translateX(0%);
+        }
+
+        &_title {
+            position: absolute;
+            left: 142px;
+            top: -80px;
+            width: 100px;
+        }
+
+        &_wrapper {
+            margin-top: 103px;
+        }
+
     }
 }

@@ -7,10 +7,17 @@
 }
 
 .main {
-  width: 80%;
-  margin: 4rem auto;
+  width: 1100px;
+  margin: 80px auto;
   color: black;
 
+
+  &__title_wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: baseline;
+  }
 
   &__title {
     font-weight: 600;
@@ -22,7 +29,6 @@
     font-size: 14px;
     line-height: 120%;
     color: rgba(0, 0, 0, 0.7);
-    margin-left: 1.2rem;
   }
 
   &__search {
@@ -31,7 +37,7 @@
   }
 
   &__searchbar {
-    margin-top: 2rem;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,7 +65,7 @@
   &__line {
     border: 1px solid #DFDFDF;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 40px;
   }
 
   &__wrap {
@@ -67,8 +73,40 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 26px;
     row-gap: 57px;
-    justify-items: center;
+    justify-items:center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    width: 95%;
+    margin-top: 40px;
+
+    &__title_wrap {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__query {
+      left: 0px;
+      top: 60px;
+    }
+
+    &__search {
+      width: 100%;
+    }
+
+    &__line {
+      margin-top: 85px;
+    }
+
+    &__wrap {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
